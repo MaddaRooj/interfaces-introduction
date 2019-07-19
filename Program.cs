@@ -26,6 +26,12 @@ namespace intro_interfaces
             };
             gasVehicles.ForEach(gv => gv.RefuelTank());
 
+            GasStation exxon = new GasStation();
+            exxon.Refuel(gasVehicles);
+
+            BatteryStation teslaThing = new BatteryStation();
+            teslaThing.Refuel(electricVehicles);
+
         }
     }
 }
